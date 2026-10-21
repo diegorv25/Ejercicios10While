@@ -23,5 +23,27 @@ public class Analizador {
         } else {
             System.out.println("No se ha introducido ningún número par");
         }
+        /*
+        En mi forma me faltaría la comprobación de q fuera > 0 los números introducidos
+        Otra forma (la del profesor):
+
+        Scanner sc = new Scanner(System.in);
+        int num = 0, numValidos = 0, suma = 0;
+        boolean par = false;
+        while (num>=0) {
+            System.out.println("Introduzca un número positivo: ");
+            num = sc.nextInt();
+            if(num>=0){
+                numValidos++;
+                suma += num;
+                if (num % 2 == 0){
+                    par = true;
+                }
+            }
+        }
+        System.out.println("Números válidos introducidos: " + numValidos
+                +"\nSuma de números válidos: " + suma
+                +"\n¿Hubo algún par?: " + par);
+        */
     }
 }
